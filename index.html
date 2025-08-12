@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title> PAYMENT</title>
+  <style>
+    @import url('https://files.catbox.moe/wkg4g7.jpeg');
+
+    body {
+      margin: 0;
+      padding: 30px 15px;
+      font-family: 'Share Tech Mono', monospace;
+      background: #000;
+      color: #00ff99;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      background-image: linear-gradient(to bottom, #000000, #001a00);
+      animation: matrixScroll 30s linear infinite;
+    }
+
+    @XAngelDraknes {
+      from { background-position: 0 0; }
+      to { background-position: 0 1000px; }
+    }
+
+    h1 {
+      color: #00ffcc;
+      text-align: center;
+      font-size: 2.5em;
+      margin-bottom: 10px;
+    }
+
+    .thumbnail {
+      width: 160px;
+      height: 160px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px #00ff99;
+      margin: 20px 0;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+      max-width: 350px;
+      margin-bottom: 40px;
+    }
+
+    .product-card {
+      background: rgba(0, 30, 0, 0.6);
+      border: 1px solid #00ff99;
+      border-radius: 12px;
+      padding: 15px;
+      box-shadow: 0 0 15px #004d26;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .product-card:hover {
+      background: rgba(0, 50, 0, 0.7);
+      transform: scale(1.03);
+    }
+
+    .product-title {
+      font-size: 1.1em;
+      font-weight: bold;
+      color: #00ffcc;
+    }
+
+    .price {
+      font-size: 0.95em;
+      margin: 6px 0;
+      color: #66ffcc;
+    }
+
+    .product-detail {
+      display: none;
+      margin-top: 8px;
+      font-size: 0.85em;
+      color: #99ffcc;
+      white-space: pre-line;
+    }
+
+    button {
+      background-color: #00ff99;
+      color: black;
+      border: none;
+      padding: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+      font-family: inherit;
+      box-shadow: 0 0 10px #00ff99;
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+    }
+
+    button:hover {
+      transform: scale(1.05);
+    }
+
+    hr {
+      width: 80%;
+      border: none;
+      height: 1px;
+      background-color: #004400;
+      margin: 30px 0;
+    }
+
+    .note {
+      color: #ccc;
+      font-size: 0.9em;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Xangel Payment</h1>
+  <img src="https://files.catbox.moe/8igvbp.jpg" class="thumbnail" />
+
+  <!-- QRIS & DUKUNGAN -->
+  <div class="section">
+    <button onclick="window.open('https://files.catbox.moe/2e51fv.jpg', '_blank')">QRIS</button>
+    <button onclick="event.preventDefault()">DANA: 083173217459 dana gada nama</button>
+    <button onclick="event.preventDefault()">GOPAY: gada gopay bg</button>
+  </div>
+  <div class="note">Atas Nama: <strong>𝐗𝙰𝙽𝙶𝙴𝙻</strong></div>
+
+  <hr />
+
+  <!-- Produk Section -->
+  <div class="section">
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Partner Xangel</div>
+      <div class="price">Mulai Rp40.000</div>
+      <div class="product-detail">
+Benefit:
+𝙶𝙴𝚃 𝙿𝚃 𝚂𝙲 𝙼𝙸𝙺𝙰𝚂𝙰☄
+𝙶𝙴𝚃 𝙾𝚆𝙽 𝚅𝙰𝙽𝙴𝙶𝙴𝚃𝙰☄
+𝙵𝚁𝙴𝙴 𝚄𝙿 𝚂𝙲 𝚇𝙿𝚁𝙾𝚃𝙴𝚇☄
+𝙵𝚁𝙴𝙴 𝚄𝙿 𝚂𝙲 𝙾𝚅𝙴𝚁𝙻𝙾𝙰𝙳☄
+𝙶𝙴𝚃 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽☄
+𝙶𝙴𝚃 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙽𝙴𝚆☄
+𝙶𝙴𝚃 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙳𝙴𝙻𝙰𝚈☄
+𝙶𝙴𝚃 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙵𝙾𝚁𝙲𝙻𝙾𝚂𝙴☄
+𝙶𝙴𝚃 𝙵𝚄𝙽𝙲𝚃𝙸𝙾𝙽 𝙸𝙾𝚂☄
+𝚁𝙴𝚂𝙴𝙻𝙻𝙴𝚁 𝚂𝙲 𝚉𝙴𝚃𝚉𝙰☄
+𝙶𝙴𝚃 𝙼𝚄𝚁𝙱𝙰𝙽𝙳☄
+𝙵𝚁𝙴𝙴 𝚂𝙲 𝙰𝚇𝙶𝙰𝙽𝙺☄
+𝙶𝙴𝚃 𝙱𝙰𝚂𝙴 𝙱𝙾𝚃 𝚆𝙰☄
+𝙶𝙴𝚃 𝙱𝙰𝚂𝙴 𝙱𝙾𝚃 𝚃𝙴𝙻𝙴☄
+𝙶𝙴𝚃 𝚃𝚄𝚃𝙾𝚁 𝙿𝙰𝚂𝙰𝙽𝙶 𝙳𝙱☄
+𝙶𝙴𝚃 𝚃𝚄𝚃𝙾𝚁 𝙿𝙰𝚂𝙰𝙽𝙶 𝙵𝚄𝙽𝙲☄
+𝙳𝙸 𝙰𝙹𝙰𝚁𝙸𝙽 𝙱𝙸𝙺𝙸𝙽 𝚂𝙲☄
+𝙶𝚆 𝙱𝙰𝙽𝚃𝚄 𝙽𝙰𝙸𝙺 𝙽𝙰𝙼𝙰☄
+𝙶𝙴𝚃 𝚃𝚄𝚃𝙾𝚁 𝙰𝙳𝙳 𝙵𝚄𝙽𝙲☄
+𝙶𝙴𝚃 𝙼𝚄𝚁𝙸𝙳 𝚁𝙰𝙽𝚂𝙾𝙼𝚆𝙰𝚁𝙴☄
+𝙶𝙴𝚃 𝚂𝙲 𝙾𝙱𝙵 𝙽𝙾 𝙴𝙽𝙲☄
+𝙶𝙴𝚃 𝙰𝙳𝙼𝙸𝙽 𝙲𝙷☄
+𝙰𝙳𝙼𝙸𝙽 𝚁𝙾𝙾𝙼 𝙿𝚄𝙱𝙻𝙸𝙲☄
+      </div>
+    </div>
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Murband</div>
+      <div class="price">Rp20.000</div>
+      <div class="product-detail">
+Benefit:
+- Bisa Open Jasband
+- Bisa ban riper
+- Bisa ban penipu
+- Bisa ban lonte vcs
+- Bisa Ban Mantan
+- Full Tutor sampe bisa
+- Mt Private
+- Free Rinem apk cek ban
+- Mt gacor
+- Mt Up Tiap hari
+- Anti ampasz
+      </div>
+    </div>
+    
+        <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Admin Murband</div>
+      <div class="price">Rp50.000</div>
+      <div class="product-detail">
+Benefit:
+- Bisa Open Murband
+- Bisa Open Jasband
+- Bisa ban riper
+- Bisa ban penipu
+- Bisa ban lonte vcs
+- Bisa Ban Mantan
+- Full Tutor sampe bisa
+- Mt Private
+- Free Ajarin Rinem Apk Cek Ban ampe bisa
+- Mt gacor
+- Mt Up Tiap hari
+- Anti ampasz
+      </div>
+    </div>
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Angkasa Via Telegram</div>
+      <div class="price">Rp25.000</div>
+      <div class="product-detail">
+Script Gacor 
+Anti Ampasz
+Dev Depay And Rans
+Cocok buat murbug&jasbug
+-------------------------------
+Reseller Angkasa 70k
+- Bisa Open P.O
+- Bisa Jual Sc
+- Free Update Perma
+- Balmod? jelas
+      </div>
+    </div>
+
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Xandros Via Telegram</div>
+      <div class="price">Rp25.000</div>
+      <div class="product-detail">
+Script bug Via telegram Gacor!!!! 
+Sc Anti Ampas
+Cocok buat murbug dan jasbug
+--------------------
+Reseller Xandros 60k
+- Bisa Open P.O
+- Bisa Jual Sc
+- Free Up Perma
+- Balmod? kalo usaha
+      </div>
+    </div>
+        <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Mikasa Via Tele&Wa</div>
+      <div class="price">Rp20.000</div>
+      <div class="product-detail">
+- Script Gacor
+- Cocok buat murbug and jasbug
+--------------------------------
+Reseller Mikasa 30k
+- Bisa Open P.O
+- Bisa Jual Script
+- Free Up Perma
+- Balmod? Yoi
+--------------------------------
+Owner Mikasa 40k
+- Bisa Open Reseller
+- Bisa Open P.O
+- Bisa Jual Sc
+- Free Up Perma
+--------------------------------
+PT Mikasa 50k
+- Bisa Open Owner
+- Bisa Open Reseller
+- Bisa Open P.O
+- Free Up Perma
+--------------------------------
+TK Mikasa 60k
+- Bisa Open PT
+- Bisa Open Owner
+- Bisa Open Reseller
+- Bisa Open P.O
+- Free Up Perma
+      </div>
+    </div>
+    
+        <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Xprotex</div>
+      <div class="price">Rp40.000</div>
+      <div class="product-detail">
+𝟺𝟶𝙺 𝙽𝙾 𝚄𝙿
+𝟻𝟶𝙺 𝙵𝚁𝙴𝙴 𝚄𝙿 𝟸𝚇
+𝟼𝟶𝙺 𝙵𝚁𝙴𝙴 𝚄𝙿 𝟺𝚇
+𝟽𝟶𝙺 𝙵𝚁𝙴𝙴 𝚄𝙿 𝟼𝚇
+𝟾𝟶𝙺 𝙵𝚁𝙴𝙴 𝚄𝙿 𝙿𝙴𝚁𝙼𝙰
+      </div>
+    </div>
+    
+    <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script Overlord</div>
+      <div class="price">Rp30.000</div>
+      <div class="product-detail">
+𝟹𝟶𝙺: 𝙽𝙾 𝚄𝙿
+𝟺𝟶𝙺: 𝙵𝚁𝙴𝙴 𝚄𝙿 𝟷×
+𝟻𝟶𝙺: 𝙵𝚁𝙴𝙴 𝚄𝙿 𝟺×
+𝟼𝟻𝙺: 𝙵𝚄𝙻𝙻 𝚄𝙿
+      </div>
+    </div>
+    
+     <div class="product-card" onclick="toggleDetail(this)">
+      <div class="product-title">Script XSTROM</div>
+      <div class="price">Rp40.000</div>
+      <div class="product-detail">
+40K: NO UP
+50K: FREE UP 2×
+60K: FREE UP 4×
+70K: FREE UP 6×
+80K: FULL UU
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleDetail(card) {
+      const detail = card.querySelector('.product-detail');
+      detail.style.display = detail.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+</html>
